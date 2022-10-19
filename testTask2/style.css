@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400&display=swap');
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+.bodyField{
+}
+.firstUpperDiv{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.secondUpperDiv{
+    margin-top: 2%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;}
+
+.control{
+    margin-top:15px;
+    color: gray;
+}
+
+.container{overflow:hidden;}
+.box{white-space:nowrap}
+.box div{display:inline-block;}
