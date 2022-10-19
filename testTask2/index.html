@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xml:lang="ru-RU" lang="ru-RU">
+
+</html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body class = "bodyField">
+<div class="firstUpperDiv">
+
+    <div class="field">
+        <b>Вы регистрируетесь как :</b>
+        <div class="control">
+            <label class="radio">
+                <input onclick="hide()" id="hide" type="radio" name="question">
+                Покупатель
+            </label>
+            <br/>
+            <label class="radio">
+                <input onclick="show()" id="show" type="radio" name="question">
+                Поставщик
+            </label>
+        </div>
+    </div>
+    
+</div>
+
+<div class="secondUpperDiv">
+    <div class="field">
+        <label class="label" style="color: gray" >Эл. почта</label>
+        <div class="control">
+            <input class="input" type="text" placeholder="Эл.почта" >
+        </div>
+        
+    </div>
+    <div class="field">
+        <label class="label"  >Название организации</label>
+        <div class="control">
+            <input class="input" type="text" placeholder="ИП. или Юр.лицо" >
+            <input class="input" style="margin-top: 15px" type="text" placeholder="ИНН" >
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label"  >Фактический адрес</label>
+        <div class="control">
+            <input class="input" type="text" placeholder="Ваш город" >
+            
+            <div class="field is-grouped is-grouped-multiline" style="margin-top: 15px">
+                <input class="input" style="width: 30%" type="text" placeholder="Улица" >
+                <input class="input" style="width: 30% ; margin-left: 15px" type="text" placeholder="Дом./стр." >
+                <input class="input" style="width: 30% ; margin-left: 15px" type="text" placeholder="Офис" >
+                
+            </div>
+
+            <div class="field has-addons" style="margin-top: 15px">
+                <p class="control">
+                    <a class="button is-static">
+                        +7
+                    </a>
+                </p>
+                <p class="control">
+                    <input class="input" type="text" placeholder="Телефон">
+                </p>
+            </div>
+            <input id="content" class="input" style=" display:none ;margin-top: 15px" type="text" placeholder="Сайт вашей компании">
+        </div>
+    </div>
+
+    <div class="field" >
+        <label class="label"  >Виды деятельности</label>
+        <div class="control">
+            <label class="checkbox">
+                <b>Магазин </b>
+                <input type="checkbox">
+            </label>
+        </div>
+        <div class="control">
+            <label class="checkbox">
+                <b>Региональная сеть магазинов </b>
+                <input type="checkbox">
+            </label>
+        </div>
+        <div class="control">
+            <label class="checkbox">
+                <b>Федеральная сеть маганзинов </b>
+                <input type="checkbox">
+            </label>
+        </div>
+        <div class="control">
+            <label class="checkbox">
+                <b>Интернет магазин </b>
+                <input type="checkbox">
+            </label>
+        </div>
+        <div class="control">
+            <label class="checkbox">
+                <b>Автосервис</b>
+                <input type="checkbox">
+            </label>
+        </div>
+        <div class="control">
+            <input class="input" type="text" placeholder="Прочее">
+        </div>
+    </div>
+
+    <form action="?" method="POST">
+        <div class="g-recaptcha"  data-sitekey="your_site_key"></div>
+        <br/>
+    </form>
+
+    <input type="submit" onclick="Al()" value="Отправить заявку">
+    
+</div>
+</body>
